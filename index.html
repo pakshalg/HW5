@@ -1,0 +1,49 @@
+<!--
+Name: Pakshal Gandhi
+Student ID: 01772844
+Last Date Modified: 12/18/24
+index.html
+
+Description: This is the basic HTML structure for the Scrabble webpage. It links to the necessary *,css and *.js files as well as the jQuery UI library for additional functionality. The HTML structure includes a div for the game board, a tile rack where letter tiles will be displayed, and buttons for submitting words, refreshing the tile rack, and resetting the game. The page also has areas to display validation messages and scores.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Scrabble Game</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="scrabble-board"></div>
+    </div>
+
+    <div class="tiles-container">
+        <div class="image-container">
+            <img src="tile-rack.png" alt="Scrabble Tile Holder" class="rack">
+            <div id="tile-rack"></div>
+        </div>
+    </div>
+
+    <div>
+        <div id="validation-message"></div>
+        <div id="score-display">Current Score: 0</div>
+        <div id="game-score-display">Game Score: 0</div>
+        <button id="submit-word">Submit Word</button>
+        <button id="refresh-rack">Refresh Rack</button>
+        <button id="reset-game">Reset Game</button>
+    </div>
+
+</body>
+
+</html>

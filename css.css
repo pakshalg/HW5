@@ -1,0 +1,142 @@
+/*
+Name: Pakshal Gandhi
+Student ID: 01772844
+Last Date Modified: 12/18/24
+css.css
+
+Description: This is the stylistic portion of the scrabble game. Most of the styling's purpose can be interpreted from the class names and modifications.
+*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#scrabble-board {
+    display: grid;
+    grid-template-columns: repeat(7, 48px);
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.board-cell {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s;
+}
+
+.double {
+    background-color: add8e6;
+}
+
+.triple {
+    background-color: 90ee90;
+}
+
+.tiles-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    display: block;
+}
+
+.rack{
+    height: 50px;
+    width: 400px;
+    opacity: 0.9;
+}
+
+#tile-rack {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.tile {
+    background-color: #F3F3F3;
+    /* border: 1px solid #000;  */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    cursor: grab;
+}
+
+
+#validation-message {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#score-display {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#game-score-display{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.highlight{
+    box-shadow:  0px 0px 10px green;
+    opacity: 0.7;
+}
+
+.hoverCls{
+    box-shadow:  0px 0px 10px rgb(0, 255, 238);
+}
